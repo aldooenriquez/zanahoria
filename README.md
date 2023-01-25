@@ -1,24 +1,11 @@
-# README
+# iamzanahoria.io README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hi! this is the repo of my personal page iamzanahoria.io, this is a personal experimenting page to improve my Ruby and Ruby on Rails coding skills, while I document myself and learn new things through books, videos, podcast, etc.
 
-Things you may want to cover:
+Visiting the page you'll find a code blog section (where I'll cover in detail the things I learned and the new features I implemented on the page), a photo journal section (hey! I'm new in the photo hobby, so join me on my journey to improve my photos with my analog camera) and a bookshelf section (here you can see the books that I had read and the one I'm currently reading)
 
-* Ruby version
+Project data:
 
-* System dependencies
+* Ruby version: Ruby 3.2.0
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Rails version: Rails 7.0.4.1
