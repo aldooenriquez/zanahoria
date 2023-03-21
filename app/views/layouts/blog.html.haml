@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title= page_title
+
+    = stylesheet_link_tag 'blog', media: 'all'
+
+    = javascript_include_tag 'blog'
+
+  %body{
+    class: "#{controller_name} #{action_name} #{request.fullpath.delete("/")}"
+  }
+    = yield

@@ -6,6 +6,10 @@ Visiting the page you'll find a code blog section (where I'll cover in detail th
 
 Project data:
 
-* Ruby version: Ruby 3.2.0
+- Ruby version: Ruby 3.2.0
 
-* Rails version: Rails 7.0.4.1
+- Rails version: Rails 7.0.4.1
+
+- Tailwind
+
+- Font Awesome icons
