@@ -72,3 +72,10 @@ group :test do
 end
 
 gem "tailwindcss-rails", "~> 2.0"
+gem "font-awesome-sass", "~> 6.3.0"
+
+#Blog gems
+gem 'friendly_id', '~> 5.4.0'
+gem "octokit", "~> 5.0"
+gem 'kaminari'
+gem "haml"
