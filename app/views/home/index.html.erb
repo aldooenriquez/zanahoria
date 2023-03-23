@@ -1,18 +1,29 @@
-<div class="w-screen min-h-screen flex flex-col">
-  <div name="info" class="w-full flex mt-5 px-5 flex-row justify-between">
-    <p>IAM<span class="text-orange-400 hover:text-black">ZANAHOR.IO</span></p>
-    <div class="flex flex-row gap-2">
-      <%= link_to icon('fa-brands', 'square-github', class:'fa-2xl'), "https://github.com/iamzanahoria", :target => "_blank" %>
-      <%= link_to icon('fa-brands', 'square-twitter', class:'fa-2xl'), "https://twitter.com/iamzanahorio", :target => "_blank" %>
-      <%= link_to icon('fa-brands', 'square-instagram', class:'fa-2xl'), "https://www.instagram.com/iamzanahorio/", :target => "_blank" %>
+<div class="w-screen min-h-screen flex flex-row">
+  <div name="banner-image" class="w-full h-screen flex flex-col">
+    <%= image_tag("home.JPG", :alt => "home image", class: "h-full object-cover") %>
+  </div>
+  <div class="w-full p-5 flex flex-col justify-between">
+    <div name="local-time" class="w-full h-fit flex flex-row justify-end invisible">
+      <%= local_time(@time) %>
     </div>
-  </div>
-  <div name="navbar" class="w-full flex my-5 flex-row justify-evenly">
-    <%= link_to "BLOG", blog_posts_path, class: "hover:text-orange-400" %>
-    <%= link_to "BOOKSHELF", root_path, class: "hover:text-orange-400" %>
-    <%= link_to "ABOUT", root_path, class: "hover:text-orange-400" %>
-  </div>
-  <div name="content" class="container flex flex-col h-full justify-center mx-auto px-4 mb-5 border-2 border-black">
-    <h1 class="text-2xl text-center text-orange-400 hover:text-black">Zanahoria!</h1>
+    <div name="navbar" class="w-full h-full flex flex-row items-center">
+      <div class="h-fit">
+        <p class="text-5xl">
+          I<br>
+          AM<br>
+          ZANAHORIA
+        </p>
+      </div>
+    </div>
+    <div name="navbar" class="w-full h-full flex flex-row items-end justify-evenly text-xl">
+      <%= link_to "BLOG", blog_posts_path, class: "hover:text-orange-400" %>
+      <%= link_to "LIBRERO", root_path, class: "hover:text-orange-400" %>
+      <%= link_to "SOBRE MI", root_path, class: "hover:text-orange-400" %>
+      <div class="flex flex-row gap-2">
+        <%= link_to icon('fa-brands', 'square-github', class:'fa-2xl'), "https://github.com/iamzanahoria", :target => "_blank" %>
+        <%= link_to icon('fa-brands', 'square-twitter', class:'fa-2xl'), "https://twitter.com/iamzanahorio", :target => "_blank" %>
+        <%= link_to icon('fa-brands', 'square-instagram', class:'fa-2xl'), "https://www.instagram.com/iamzanahorio/", :target => "_blank" %>
+      </div>
+    </div>
   </div>
 </div>
