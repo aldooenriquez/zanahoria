@@ -74,6 +74,9 @@ end
 gem "tailwindcss-rails", "~> 2.0"
 gem "font-awesome-sass", "~> 6.3.0"
 
+#home gems
+gem 'local_time'
+
 #Blog gems
 gem 'friendly_id', '~> 5.4.0'
 gem "octokit", "~> 5.0"
