@@ -1,0 +1,32 @@
+<div class="w-screen p-5 flex flex-col justify-between">
+  <div class="min-h-screen flex flex-col">
+    <div name="local-time" class="w-full h-fit flex-initial flex flex-row justify-end">
+      <%= local_time(@time) %>
+    </div>
+    <hr class="border border-black">
+    <div name="content" class="w-full h-full py-20 flex-auto flex flex-col items-center justify-around">
+      <div name="self-portrait-image" class="h-72 w-auto flex flex-col">
+        <%= image_tag("me.JPG", :alt => "self-portrait", class: "max-h-full max-w-full") %>
+      </div>
+      <div name="Introduction message" class="h-fit text-center">
+        <p class="text-5xl pb-5">
+          I AM ZANAHORIA
+        </p>
+        <p class="text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper sapien at ultrices tempor. Aenean ac orci magna. Phasellus eleifend mauris a fringilla pretium.
+          Aliquam erat volutpat. Praesent semper quis massa vitae cursus. Cras at placerat arcu. Sed tincidunt at odio nec rhoncus. Pellentesque ut vulputate leo, in fermentum elit.
+          Vestibulum viverra facilisis velit sit amet rutrum. Vestibulum vehicula convallis ipsum, id aliquet ante varius a. Sed dictum aliquam lorem in blandit.
+          Sed tristique faucibus massa, quis faucibus est eleifend eget. Nullam porttitor quam sit amet neque tempor placerat. Maecenas bibendum, ligula mollis malesuada tincidunt,
+          urna ligula blandit justo, id molestie lectus elit vel ligula.
+        </p>
+      </div>
+      <%= link_to icon('fa-solid', 'angle-down', class:'fa-2xl'), '#projects' %>
+    </div>
+  </div>
+  <div id="projects" class="h-fit w-full">
+      <p class="text-5xl"> Proyectos </p>
+      <div class=" h-72 flex flex-col justify-center items-center">
+        <p class="w-fit h-fit text-5xl"> Aqui deberian ir proyectos cool en los que este trabajando </p>
+      </div>
+    </div>
+</div>
