@@ -20,13 +20,15 @@
           urna ligula blandit justo, id molestie lectus elit vel ligula.
         </p>
       </div>
-      <%= link_to icon('fa-solid', 'angle-down', class:'fa-2xl'), '#projects' %>
-    </div>
-  </div>
-  <div id="projects" class="h-fit w-full">
-      <p class="text-5xl"> Proyectos </p>
-      <div class=" h-72 flex flex-col justify-center items-center">
-        <p class="w-fit h-fit text-5xl"> Aqui deberian ir proyectos cool en los que este trabajando </p>
+      <div data-controller="scroll-to">
+        <%= link_to icon('fa-solid', 'angle-down', class:'fa-2xl'), '#projects', data: { action: "click->scroll-to#scrollToSection" } %>
       </div>
     </div>
+  </div>
+  <div id="projects" data-target="scroll-to.section" class="h-fit w-full">
+    <p class="text-5xl"> Proyectos </p>
+    <div class=" h-72 flex flex-col justify-center items-center">
+      <p class="w-fit h-fit text-5xl"> Aqui deberian ir proyectos cool en los que este trabajando </p>
+    </div>
+  </div>
 </div>
