@@ -25,10 +25,20 @@
       </div>
     </div>
   </div>
-  <div id="projects" data-target="scroll-to.section" class="h-fit w-full">
+  <div id="last-blog" data-target="scroll-to.section" class="h-fit w-full flex flex-row">
+    <p class="w-1/2 text-5xl"> Blog mas reciente </p>
+    <div class="w-1/2 h-96 flex flex-col justify-center items-center">
+      <% if @last_blog.present?  %>
+        <p class="w-fit h-fit text-3xl"><%= @last_blog.title %></p>
+      <% else  %>
+        <p class="w-fit h-fit text-5xl"> [Aun no hay blogs publicados] </p>
+      <% end %>
+    </div>
+  </div>
+  <div id="projects" data-target="scroll-to.section" class="h-fit w-full flex flex-col">
     <p class="text-5xl"> Proyectos </p>
-    <div class=" h-72 flex flex-col justify-center items-center">
-      <p class="w-fit h-fit text-5xl"> Aqui deberian ir proyectos cool en los que este trabajando </p>
+    <div class=" h-96 flex flex-col justify-center items-center">
+      <p class="w-fit h-fit text-5xl"> [Aqui deberian ir proyectos cool en los que este trabajando]</p>
     </div>
   </div>
 </div>
