@@ -1,12 +1,13 @@
-<div class="w-screen min-h-screen flex flex-row">
+<div class="w-screen flex flex-row">
   <div name="banner-image" class="w-full h-screen flex flex-col">
     <%= image_tag("home.JPG", :alt => "home image", class: "h-full object-cover") %>
   </div>
   <div class="w-full p-5 flex flex-col justify-between">
-    <div name="local-time" class="w-full h-fit flex flex-row justify-end invisible">
+    <div name="local-time" class="w-full h-fit flex flex-row justify-end">
       <%= local_time(@time) %>
     </div>
-    <div name="navbar" class="w-full h-full flex flex-row items-center">
+    <hr class="border border-black">
+    <div name="content" class="w-full h-full flex flex-row items-center">
       <div class="h-fit">
         <p class="text-5xl">
           I<br>
@@ -15,10 +16,11 @@
         </p>
       </div>
     </div>
-    <div name="navbar" class="w-full h-full flex flex-row items-end justify-evenly text-xl">
+    <hr class="mb-5 border border-black">
+    <div name="navbar" class="w-full h-fit flex flex-row items-end justify-evenly text-xl">
       <%= link_to "BLOG", blog_posts_path, class: "hover:text-orange-400" %>
       <%= link_to "LIBRERO", root_path, class: "hover:text-orange-400" %>
-      <%= link_to "SOBRE MI", root_path, class: "hover:text-orange-400" %>
+      <%= link_to "SOBRE MI", aboutme_path, class: "hover:text-orange-400" %>
       <div class="flex flex-row gap-2">
         <%= link_to icon('fa-brands', 'square-github', class:'fa-2xl'), "https://github.com/iamzanahoria", :target => "_blank" %>
         <%= link_to icon('fa-brands', 'square-twitter', class:'fa-2xl'), "https://twitter.com/iamzanahorio", :target => "_blank" %>

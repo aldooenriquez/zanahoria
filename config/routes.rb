@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   root "home#index"
 
   get "home/index"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  # Routes for aboutme
+  match "/aboutme", to: "aboutme#index", as: :aboutme, via: :get
 
   # Routes for blog
   match "/blog", to: "blog_posts#index", as: :blog_posts, via: :get
