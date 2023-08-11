@@ -1,6 +1,7 @@
 <div class="w-screen p-5 flex flex-col justify-between">
   <div class="min-h-screen flex flex-col">
-    <div name="local-time" class="w-full h-fit flex-initial flex flex-row justify-end">
+    <div name="local-time" class="w-full h-fit flex-initial flex flex-row justify-between">
+      <%= link_to "ZANAHOR.IO", root_path, class: "hover:text-orange-400" %>
       <%= local_time(@time) %>
     </div>
     <hr class="border border-black">
@@ -17,7 +18,13 @@
           Aliquam erat volutpat. Praesent semper quis massa vitae cursus. Cras at placerat arcu. Sed tincidunt at odio nec rhoncus. Pellentesque ut vulputate leo, in fermentum elit.
           Vestibulum viverra facilisis velit sit amet rutrum. Vestibulum vehicula convallis ipsum, id aliquet ante varius a. Sed dictum aliquam lorem in blandit.
           Sed tristique faucibus massa, quis faucibus est eleifend eget. Nullam porttitor quam sit amet neque tempor placerat. Maecenas bibendum, ligula mollis malesuada tincidunt,
-          urna ligula blandit justo, id molestie lectus elit vel ligula.
+          urna ligula blandit justo, id molestie lectus elit vel ligula.<br/>
+          !!!!Revisar redaccion (y puntuacion) de esta wea!!!<br/>
+          En la seccion de BLOG suelo postear bla bla bla<br/>
+          Al contrario de la seccion de SIPS&BITS donde suelo escribir pensamientos o ideas sueltas sobre lo que estoy desarrollando en ese momento, puede que no las termine desarrollando
+          pero se me hace buena idea descargar esas notas de mi cabeza y plasmarlas en algun lugar.
+          Ultimamente le he agarrado el gusto a la fotografia, entonces ademas de poder leer sobre mis viajes en la seccion de BLOGS quise hacer mi seccion de GALERIA para poder ver
+          mis fotografias de una forma mas general.
         </p>
       </div>
       <div data-controller="scroll-to">
@@ -41,4 +48,16 @@
       <p class="w-fit h-fit text-5xl"> [Aqui deberian ir proyectos cool en los que este trabajando]</p>
     </div>
   </div>
+  <hr class="mb-5 border border-black">
+    <div name="navbar" class="w-full h-fit flex flex-row items-end justify-evenly text-xl">
+      <%= link_to "BLOG", blog_posts_path, class: "hover:text-orange-400" %>
+      <%= link_to "SIPS&BITS", root_path, class: "hover:text-orange-400" %>
+      <%= link_to "GALERIA", root_path, class: "hover:text-orange-400" %>
+      <%= link_to "SOBRE MI", aboutme_path, class: "hover:text-orange-400" %>
+      <div class="flex flex-row gap-2">
+        <%= link_to icon('fa-brands', 'square-github', class:'fa-2xl'), "https://github.com/iamzanahorio", :target => "_blank" %>
+        <%= link_to icon('fa-brands', 'square-twitter', class:'fa-2xl'), "https://twitter.com/iamzanahorio", :target => "_blank" %>
+        <%= link_to icon('fa-brands', 'square-instagram', class:'fa-2xl'), "https://www.instagram.com/iamzanahorio/", :target => "_blank" %>
+      </div>
+    </div>
 </div>
